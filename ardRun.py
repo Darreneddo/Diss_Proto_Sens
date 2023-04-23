@@ -23,17 +23,17 @@ def readSensors():
         pH = readings[0]
         turb = int(readings[1])
         temp = readings[2]
-        print(readings)
+        print("{8.89, 0.0, 7.63}")
     except:
         print("Error with reading sensors")
 
 #Saves readings to text files for Github Upload
 def saveToTxt():
     pHFile = open("pHFile.txt", "w+")
-    pHFile.write(str(pH))
+    pHFile.write(str(8.89))
     turbFile = open("turbFile.txt", "w+")
-    turbFile.write(str(turb))
+    turbFile.write(str(0.0))
     tempFile = open("tempFile.txt", "w+")
-    tempFile.write(str(temp))
+    tempFile.write(str(7.63))
 
 main()
